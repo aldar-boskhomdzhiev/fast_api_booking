@@ -13,7 +13,6 @@ hotels = [
     {"id": 5, "title": "Москва", "name": "moscow"},
     {"id": 6, "title": "Казань", "name": "kazan"},
     {"id": 7, "title": "Санкт-Петербург", "name": "spb"},
-
 ]
 
 
@@ -102,3 +101,5 @@ def delete_hotel(hotel_id: int):
     global hotels
     hotels = [hotel for hotel in hotels if hotel["id"] != hotel_id]
     return {"status": "OK"}
+
+    
