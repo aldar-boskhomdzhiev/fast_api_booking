@@ -83,6 +83,7 @@ def update_hotel(hotel_id: int,
 @router.patch("/{hotel_id}",
               summary="Частичное обновление данных об отеле",
               description="Можно отправить name, а можно title")
+
 def part_update_hotel(hotel_id: int,
                       title: str | None = Body(None),
                       name: str | None = Body(None),):
